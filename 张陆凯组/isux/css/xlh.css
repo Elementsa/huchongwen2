@@ -1,0 +1,175 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.xlh-content{
+    margin: 0 auto;
+    width: 1260px;
+}
+    /*=================xlh内容大图开始===============*/
+.xlh-container{
+    margin-top: 180px;
+    position: relative;
+}
+#container_img {
+    height: 606px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    margin-bottom: 3px;
+}
+#container_img img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 2000ms;
+}
+#container_img:hover img{
+    transform: scale(1.1);
+}
+/*大图下面文字部分*/
+.banner-infos{
+    width: 75%;
+    margin:  auto;
+    text-align: center;
+    position: absolute;
+    bottom: 46px;
+    left: 50%;
+    transform: translate(-50%,0);
+    color: #ffffff;
+}
+
+.banner-title{
+    font-size: 28px;
+    letter-spacing: 3px;
+}
+/*中间文字*/
+.banner-subtitle{
+    font-size: 14px;
+    padding-top: 15px;
+    margin-top: 10px;
+    border-top: 2px solid #fff;
+    width: 120px;
+    position: relative;
+    left: 50%;
+    margin-left: -60px;
+    letter-spacing: 1px;
+    font-weight: 800;
+}
+/*段落文字*/
+.banner-des{
+    font-size: 18px;
+    margin-top: 20px;
+    letter-spacing: 2px;
+}
+/*=================xlh内容大图结束===============*/
+/*=================xlh第一排小图片开始===============*/
+/*ul大小内外间距*/
+.xlh-content-box{
+    width: 100%;
+    height: 418px;
+    position: relative;
+}
+/*给第一排下面的li设置统一样式*/
+.xlh-content-box > .showing{
+    width: 418px;
+    height: 418px;
+    position: relative;
+    float: left;
+    margin-right: 3px;
+}
+/*让最后一个li的边框为0*/
+.xlh-content-box > .showing:last-child{
+    margin-right: 0;
+}
+/*设置图片大小418px*/
+.content-column > .content-wrap > img{
+    width: 418px;
+}
+/*小图片里面的内容盒子*/
+.content-column > .content-wrap{
+    height: 418px;
+    position: relative;
+    color: #ffffff;
+}
+/*内容盒子里面的第一段文字*/
+.content-column > .content-wrap > .column-name{
+    font-size: 28px;
+    letter-spacing: 2px;
+    position: absolute;
+    bottom: 82px;
+    left: 50%;
+    transform: translate(-50%,0);
+}
+/*内容盒子里面的第二段盒子*/
+.content-column > .content-wrap > .column-type{
+    font-size: 14px;
+    text-align: center;
+    border-top: 2px solid #fff;
+    width: 150px;
+    font-weight: 800;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%,0);
+    bottom: 68px;
+    padding-top: 18px;
+}
+/*=================xlh第一排小图片结束===============*/
+/*=================xlh第二排小图片开始===============*/
+.xlh-content-show{
+    margin-top: 70px;
+    width: 100%;
+    height: 484px;
+}
+.xlh-content-show > h2{
+    text-align: center;
+    font-size: 24px;
+    letter-spacing: 2px;
+    margin-bottom: 37px;
+}
+.xlh-content-show > .content-box > li{
+    width: 418px;
+    height: 418px;
+    position: relative;
+    float: left;
+    margin-right: 3px;
+}
+.xlh-content-show > .content-box > li:last-child{
+    margin-right: 0;
+}
+.xlh-content-show .content-column > .content-wrap{
+    color: #000;
+}
+/*内容盒子里面的第二段盒子*/
+.xlh-content-show .content-column > .content-wrap > .column-type{
+    border-top: 2px solid #000;
+}
+/*=================xlh第二排小图片结束===============*/
+
+/*初始化*/
+.xlh-content-box li,
+.xlh-content-show li,
+.content-box li {
+  position: relative;
+  opacity: 0;
+  transition: 1000ms;
+}
+
+.mask {
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 999;
+  background-color: #fff;
+  height: 100%;
+  width: 100%;
+  transition: 2000ms;
+}
+
+.xlh-content h2 {
+  color: #fff;
+  transition: 1000ms;
+  font-weight: bold;
+}

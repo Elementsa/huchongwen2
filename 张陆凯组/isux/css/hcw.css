@@ -1,0 +1,143 @@
+/* 版心 */
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+.hcw-content {
+    width: 1260px;
+    position: relative;
+    margin: 180px auto 0;
+}
+/* 大图定位 */
+.hcw-header {
+    width: 1260px;
+    height: 606px;
+    text-align: center;
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+}
+.hcw-header .text{
+    position: absolute;
+    height: 179px;
+    width: 1260px;
+    top: 427px;
+}
+.hcw-header .text h3{
+    font-size: 28px;
+    font-weight: normal;
+    color: white;
+    text-decoration: none;
+
+}
+.hcw-header .text span{
+    display: inline-block;;
+    font-size: 14px;
+    width: 120px;
+    text-align: center;
+    box-sizing: border-box;
+    padding-top: 15px;
+    margin-top: 10px;
+    line-height: 1;
+    letter-spacing: 1px;
+    padding-left: 1px;
+    border-top: 2px solid #fff;
+    font-family: Gotham-Medium;
+    color: white;
+}
+.hcw-header .text p {
+    font-size: 18px;
+    color: white;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    line-height: 1.7;
+    padding: 0px 200px;
+}
+
+#hcw-banner {
+    height: 606px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    margin-bottom: 3px;
+}
+#hcw-banner img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 2000ms;
+}
+#hcw-banner:hover img{
+    transform: scale(1.1);
+}
+
+/* 小图样式 */
+.hcw-li {
+    width: 1260px;
+    height: 1180px;
+    margin-top: 0;
+    border-left: 1px solid #eeefff;
+}
+.hcw-li li {
+    float:left;
+    width: 313.88px;
+    overflow: hidden;
+    border-right: 1px solid #eeefff;
+    border-bottom: 1px solid #eeefff;
+    transition: 1000ms;
+    position: relative;
+}
+/* 设置文字样式 */
+.hcw-li li a {
+    position: relative;
+    /* text-align: center; */
+}
+.hcw-li li span {
+    position: absolute;
+    width: 100%;
+    left: 105px;
+    left: 0;
+    top: -50px;
+    font-size: 24px;
+    color: black;
+    text-align: center;
+}
+/*给图片做放大动画*/
+.hcw-li li img {
+    width: 314px;
+    transition: all 0.2s;
+}
+.hcw-li li :hover img {
+    transform: scale(1.2);
+}
+/*大图动画*/
+.hcw-header .img1 {
+    transition: all 0.2s;
+}
+.hcw-header .img1:hover {
+    transform: scale(1.2);
+}
+
+
+
+.mask {
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 999;
+  background-color: #fff;
+  transition: 2000ms;
+}
+
+.hcw-header .mask {
+  width: 1260px;
+  height: 606px;
+}
+
+.hcw-li .mask{
+  width: 314.88px;
+  height: 318px;
+}

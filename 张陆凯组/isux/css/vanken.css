@@ -1,0 +1,245 @@
+/*头部开始*/
+.header-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 180px;
+    width: 100%;
+    z-index: 101;
+}
+
+.navigator {
+    background-color: white;
+    display: flex;
+    align-items: center;
+    padding: 0 60px;
+    width: 1260px;
+    height: 100%;
+    box-sizing: border-box;
+    position: absolute;
+    top: -180px;
+    left: 50%;
+    margin-left: -630px;
+}
+
+.navigator .nav-logo {
+    height: 28px;
+    width: 310px;
+    float: left;
+}
+
+.navigator .nav-logo a {
+    display: inline-block;
+    width: 99px;
+    height: 28px;
+    background: url("../images/-isux-logo.svg") no-repeat;
+}
+
+.navigator .nav-items {
+    float: left;
+}
+
+.navigator .nav-items .nav-item {
+    position: relative;
+    float: left;
+    padding: 0 23px;
+}
+
+.navigator .nav-item a {
+    font-family: 'Gotham-Medium';
+    font-size: 16px;
+    color: black;
+}
+
+.navigator .nav-item span {
+    position: absolute;
+    height: 2px;
+    background-color: black;
+    bottom: -4px;
+}
+
+.navigator .nav-item span:nth-child(2) {
+    left: 50%;
+}
+
+.navigator .nav-item span:last-child {
+    right: 50%;
+}
+
+.navigator .nav-search {
+    float: right;
+}
+
+.navigator .nav-search a {
+    display: inline-block;
+    height: 24px;
+    width: 99px;
+    background: url("../images/-header-search.svg") no-repeat right;
+}
+
+/*头部结束*/
+.tmp {
+    position: relative;
+    margin-top: 180px;
+    height: 1200px;
+    width: 100%;
+    background-color: #ccc;
+}
+
+/*底部开始*/
+.mod_site_footer {
+    position: relative;
+    height: 400px;
+    max-width: 1260px;
+    width: 100%;
+    z-index: 100;
+    margin: 0 auto;
+}
+
+.footer-prefix {
+    height: 145px;
+}
+
+.social .social-media-links {
+    width: 128px;
+    margin: 0 auto;
+}
+
+.social .inner-wrapper {
+    height: 24px;
+}
+
+.social li {
+    float: left;
+    width: 24px;
+    height: 24px;
+    margin: 0 20px;
+}
+
+.social li a {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+}
+
+.social .wechat {
+    background: url("../images/-footer-wechat.svg") no-repeat;
+    position: relative;
+}
+
+.social .wechat-qr {
+    position: absolute;
+    visibility: hidden;
+    bottom: 0;
+    left: 50%;
+    margin-left: -115px;
+}
+
+.social .wechat-qr .lazy {
+    opacity: 0;
+}
+
+.social .weibo {
+    opacity: 0.6;
+    background: url("../images/-share-weibo.svg");
+}
+
+.footer-suffix .inner-wrapper {
+    height: 220px;
+    max-width: 1260px;
+    min-height: 220px;
+    margin-top: 40px;
+    padding: 0 20px;
+    font-size: 14px;
+}
+
+.footer-suffix .footer-links {
+    float: left;
+    margin-top: 102px;
+}
+
+.footer-suffix .footer-links .footer-link {
+    float: left;
+    margin-right: 30px;
+    font-weight: bold;
+}
+
+.footer-suffix .footer-links .footer-link a {
+    color: #777;
+}
+
+.footer-suffix .copyright {
+    float: right;
+    margin-top: 102px;
+    color: #777;
+}
+
+/*底部结束*/
+/*搜索页面开始*/
+.search {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    z-index: 110;
+    top: 0;
+    left: 0;
+    background-color: rgba(255, 255, 255, .95);
+    display: flex;
+    align-items: center;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.search .search-inner {
+    width: 100%;
+    max-width: 1260px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.search .search-form {
+    padding: 0 20px;
+    overflow: hidden;
+}
+
+.search .search-box {
+    display: block;
+    position: relative;
+    height: 63px;
+    margin-bottom: 40px;
+    border-bottom: 1px solid #cccccc;
+}
+
+.search .search-box input {
+    position: absolute;
+    left: 50%;
+    margin-left: -610px;
+    width: 100%;
+    padding: 14px 5px;
+    font-size: 30px;
+    text-align: center;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    background: none;
+}
+
+.search .search-box button {
+    position: absolute;
+    right: -11px;
+    height: 52px;
+    width: 52px;
+    top: 50%;
+    margin-top: -26px;
+    border: none;
+    background: none;
+    outline: none;
+    font: 300 30px/24px Tahoma;
+    cursor: pointer;
+}
+
+/*搜索页面结束*/
+
+input::-webkit-search-cancel-button {
+  display: none;
+}

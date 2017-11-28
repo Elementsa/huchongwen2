@@ -1,0 +1,248 @@
+.left{
+    float: left;
+}
+.right{
+    float: right;
+}
+body{
+    padding: 0 50px 0 50px;
+}
+
+/* 文章详情页 */
+.wk_main_content{
+  position: relative;
+    width: 100%;
+    max-width: 1260px;
+    font-family: Gotham-Medium;
+    margin: 180px auto 0;
+    box-sizing: border-box;
+    /* background-color: #ccc; */
+}
+
+/* 前言模块开始 */
+/* wk_banner_title板块 */
+.wk_banner_title{
+    padding: 0 20px;
+    text-align: center;
+    /* background-color: yellow; */
+}
+.wk_banner_title_1>p{
+    font-size: 36px;
+    line-height: 1.4;
+    letter-spacing: 2px;
+}
+.wk_banner_title_2{
+    width: 148px;
+    height: 1px;
+    background: #000;
+    margin: 20px auto;
+}
+.wk_banner_title_3>p{
+    font-size: 14px;
+    line-height: 14px;
+    letter-spacing: 2px;
+    width: 150px;
+    margin: 0 auto;
+}
+
+/* wk_banner_paragraph板块 */
+.wk_banner_paragraph>p{
+    margin: 60px auto;
+    text-align: center;
+    font-size: 16px;
+    line-height: 22px;
+    /* background-color: yellowgreen; */
+}
+
+/* wk_banner_banner */
+.wk_banner_banner{
+    width: 100%;
+    max-height: 420px;
+}
+.wk_banner_banner>img{
+    width: 100%;
+    max-height: 420px;
+}
+
+/* 前言模块结束 */
+
+/* 正文模块开始 */
+.wk_main_content{
+
+}
+.wk_editor{
+    /* margin-top: 50px; */
+    max-width: 800px;
+    margin: 50px auto;
+}
+.wk_editor .header span{
+    font-size: 18px;
+    line-height: 14px;
+    font-family: Gotham-Medium;
+    letter-spacing: 2px;
+    padding: 0px 15px 15px 0;
+    border-bottom: 1px solid black;
+    cursor: default;
+}
+/* 文章内容 */
+.wk_editor section{
+
+}
+.wk_editor section .header{
+    text-align: left;
+    font-size: 28px;
+    margin: 40px 0 20px
+}
+.wk_editor section div.article{
+    margin-bottom: 60px;
+}
+.wk_editor section p{
+    margin: 20px auto;
+    font-size: 16px;
+    text-align: left;
+    line-height: 1.5;
+    word-wrap: break-word;
+    width: 100%;
+
+}
+.wk_editor section .pic>img{
+    width: 100%;
+}
+/* 尾部 */
+.wk_main_content footer{
+
+}
+.wk_main_content footer .content{
+    max-width: 1260px;
+    background-color: #fff;
+    padding: 80px 40px;
+    border-bottom: 1px solid #ccc;
+    margin: 0 auto;
+    transition:bottom 1s ease;
+    bottom: -100px;
+}
+.hide{
+    visibility: hidden;
+    transform: translate3d(0,100%,0);
+}
+.move{
+    position: fixed;
+    left: 0;
+    z-index: 5000;
+    background-color: #fff;
+    width: 100%;
+    max-width: 100% !important;
+    box-sizing: border-box;
+    padding: 0px 130px !important;
+    height: 60px;
+    box-shadow: 0 0 5px rgba(0,0,0,.2);
+    visibility: visible;
+    transition: transform .4s cubic-bezier(0.535, 0, 0, 1),visibility .4s cubic-bezier(0.535, 0, 0, 1);
+}
+.wk_main_content footer .content .top{
+    color: rgb(119, 119, 119);
+    font-family: Gotham-Medium;
+    font-size: 14px;
+    margin-bottom: 20px;
+
+}
+
+.wk_main_content footer .content .buttom>.left span{
+    color: rgb(119, 119, 119);
+    font-family: Gotham-Medium;
+    font-size: 14px;
+    margin-right: 15px;
+}
+.wk_main_content footer .content .buttom>.right li{
+    float: left;
+    margin-right: 10px;
+}
+.wk_main_content footer .content .buttom>.right li:last-child{
+    margin-right: 0px;
+}
+i{
+    width: 24px;
+    height: 24px;
+    display: inline-block;
+    background-color: yellow;
+    vertical-align: middle;
+    background:url(../images/sprite.svg) no-repeat -124px -50px;
+}
+/* 作者模块 */
+.wk_main_content footer .author{
+    max-height: 284px;
+    max-width: 1260px;
+    box-sizing: border-box;
+    text-align: center;
+    font-size: 14px;
+    color: #777;
+    padding: 40px 80px;
+    /* background-color: yellowgreen; */
+}
+.wk_main_content footer .author p:nth-child(2){
+    margin: 30px 0 10px 0;
+}
+/* 正文模块结束 */
+
+/* 相关文章推荐模块开始 */
+.wk_main_content>footer .related{
+    margin-top: 70px;
+}
+.related_list>li{
+    float: left;
+    width: 33.333%;
+    position: relative;
+    height: 420px;
+    overflow: hidden;
+}
+.related_list>li>img:nth-of-type(2){
+    cursor: pointer;
+    opacity: 0;
+    transition: 1000ms;
+}
+.related_list>li>img{
+    position: absolute;
+    left: 0;
+    top: 0;
+    max-width: 420px;
+    width: 100%;
+}
+/* 相关文章推荐模块结束 */
+
+/*临时*/
+.pic {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.mask {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 999;
+  background-color: #fff;
+  width: 100%;
+  height: 100%;
+  transition: 1000ms;
+}
+
+.wk_editor > * {
+  /*top: 500px;
+  opacity: 0;*/
+  position: relative;
+  overflow: hidden;
+}
+
+.wk_editor p,
+.wk_editor span {
+  top: 300px;
+  opacity: 0;
+  position: relative;
+}
+
+.wk_banner > * {
+  top: 300px;
+  opacity: 0;
+  position: relative;
+}

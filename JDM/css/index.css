@@ -1,0 +1,242 @@
+
+html {
+    min-width :320px;
+    max-width:750px;
+    margin: 0 auto;
+}
+.jd-header{
+    background-color: rgba(201, 21, 35, 0.2);
+    height: 40px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    min-width :320px;
+    max-width:750px;
+    margin: 0 auto;
+    min-width :320px;
+    max-width:750px;
+    margin: 0 auto;
+    z-index: 999;
+}
+/* 登陆右浮开始 */
+.header-right {
+    float: right;
+    width: 50px;
+    height: 40px;
+    text-align: center;
+}
+.header-right a {
+    color: white;
+    line-height: 40px;
+}
+/* 图标左浮开始 */
+.header-left {
+    float: left;
+    width: 75px;
+    height: 40px;
+    position: relative;
+}
+.header-left:before {
+    width: 56px;
+    height: 20px;
+    background-position:  0 -109px;
+}
+/* 中间的input开始 */
+.header-center {
+    height: 40px;
+    margin-left: 75px;
+    margin-right: 50px;
+    position: relative;
+}
+.header-center input {
+    border-radius: 15px;
+    margin-top: 5px;
+    width: 100%;
+    height: 30px;
+    text-indent: 30px;
+    outline: none;
+
+}
+.header-center:before {
+    width: 19px;
+    height: 19px;
+    left: 5px;
+    background-position: -60px -110px;
+}
+/* 轮播图开始 */
+.carousel {
+    overflow: hidden;
+    position: relative;
+}
+.carousel ul {
+    min-height: 143px;
+}
+.carousel > ul > li {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    transform: translateX(200%);
+}
+.carousel .points {
+    width: 100%;
+    height: 10px;
+    font-size: 0;
+    position: absolute;
+    left: 0;
+    bottom: 10px;
+    text-align: center;
+}
+.points li {
+    width: 8px;
+    height: 8px;
+    border: 1px solid white;
+    border-radius: 50%;
+    display: inline-block;
+    background-color: red;
+    margin: 0 3px;
+}
+.carousel .current {
+    background-color: white;
+}
+/* 导航栏开始 */
+
+.jd-nav{
+    padding: 15px 0;
+}
+.jd-nav a {
+    display: block;
+    padding: 0 20px;
+}
+.jd-nav p {
+    line-height: 3;
+    text-align: center;
+}
+/* 京东快报开始 */
+.jd-news {
+	margin: 0 7px;
+	height: 30px;
+	line-height: 30px;
+	background-color: #fff;
+}
+.jd-news > .left {
+    width: 80px;
+    height: 30px;
+    float: left;
+    position: relative;
+}
+.jd-news .right {
+    float: right;
+    width: 38px;
+    height: 30px;
+}
+.jd-news .center {
+    height: 40px;
+    margin: 0 38px 0 80px;
+    overflow: hidden;
+}
+.jd-news .center li {
+    padding: 0 10px;
+}
+ /* 京东秒杀 */
+.kill-nav {
+    margin-top: 10px;
+    width: 100;
+    height: 30px;
+    position: relative;
+}
+.kill-nav p {
+    font-size: 14px;
+    color: #666;
+    margin-left: 30px;
+}
+.kill-nav p:before {
+    background-position: -84px -110px;
+    width: 18px;
+    height: 22px;
+    left: -24px;
+}
+.kill-nav .kill-time {
+    font-size: 0;
+    margin-left: 105px;
+    margin-top: 3px;
+}
+.kill-nav .kill-time span{
+    background-color: black;
+    display: inline-block;
+    font-size: 12px;
+    height: 24px;
+    line-height: 24px;
+    color: white;
+    padding: 0 2px;
+
+}
+.kill {
+    background-color: white;
+}
+.kill-nav .kill-time span:nth-child(3n+1){
+    border-radius: 5px 0 0 5px;
+}
+.kill-nav .kill-time span:nth-child(3n+2){
+    border-radius: 0 5px 5px 0;
+}
+.kill-nav .kill-time span:nth-child(3n){
+    background-color: white;
+    color: black;             
+}
+.kill-more {
+    margin-right: 10px;
+    line-height: 35px;
+}
+.kill-shop {
+    overflow: auto;
+    width: 100%;    
+    -webkit-overflow-scrolling : touch;
+}
+.kill-shop ul {
+    width: 1000px;
+}
+.kill-shop li {
+    width: 92px;
+}
+.kill-shop a {
+    display: block;
+    padding: 2px 15px;
+    border-right: 1px solid #666;
+}
+.kill-shop .new-price{
+    text-align: center;
+    line-height: 1.6;
+    color: #d90000;
+    font-size: 14px;
+}
+.kill-shop .old-price{
+    text-align: center;
+    line-height: 1.6;
+    color: #666;
+    font-size: 12px;
+    text-decoration: line-through;
+}
+/* 产品区域开始 */
+.product-wrap {
+    overflow: hidden;
+    position: relative;
+    margin-top: 10px;
+}
+.product-wrap li {
+    border-bottom: 1px solid #666;
+    padding: 0 10px;
+    box-sizing: border-box;
+}
+.product-wrap:before {
+    content: '';
+    width: 1px;
+    background-color: #666;
+    height: 100%;
+}
+.product-wrap a {
+    display: block;
+    padding:  5px;
+}
+
+

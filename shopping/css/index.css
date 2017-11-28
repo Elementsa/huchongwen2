@@ -1,0 +1,328 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+body {
+  height: 100%;
+  width: 100%;
+}
+.page1 {
+  background: #F9DD67 url('../images/bg-01-990-600.png') no-repeat center bottom;
+}
+.page2 {
+  background: #84A2D4 url('../images/bg-02-2000-600.png') no-repeat center bottom;
+}
+.page3 {
+  background: #EF674D;
+}
+.page4 {
+  background: #FFEEDD url('../images/bg-04-2000-600.png') no-repeat center bottom;
+}
+.page5 {
+  background: url('../images/bg-05-2000-1500.png');
+}
+.page6 {
+  background: #85D9ED url('../images/bg-06-2500-600.png') no-repeat 20% bottom;
+}
+.page7 {
+  background: #8AC060 url('../images/bg-07-2000-1500.png') no-repeat center bottom;
+}
+.page8 {
+  background: url('../images/bg-08.png');
+}
+/* 设置一个公共css */
+.middle {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.go {
+  position: fixed;
+  bottom: 500px;
+  right: 200px;
+  z-index: 999;
+  cursor: pointer;
+}
+.next{
+  position: fixed;
+  bottom: 100px;
+  right: 200px;
+  z-index: 999;
+  animation: next 0.5s infinite;
+  cursor: pointer;
+}
+@keyframes next{
+  50% {
+    bottom: 110px;
+  }
+}
+/* 第一屏开始 */
+.one-sofa {
+  bottom: 320px;
+  margin-left: -150px;
+  animation: sofa 2s infinite;
+}
+@keyframes sofa {
+  50% {
+    bottom: 350px;
+  }
+}
+.one-tips {
+  bottom: 220px;
+}
+.one-flytitle {
+  bottom: 500px;
+  margin-left: 150px;
+  animation: flytitle 3s infinite;
+}
+@keyframes flytitle{
+  50% {
+    bottom: 550px;
+  }
+}
+/* 第一屏结束 */
+/* 第二屏开始 */
+.two-goods {
+  width: 441px;
+  height:  218px;
+  bottom: 215px;
+  display: none;
+}
+.two-search {
+  bottom: 300px;
+  margin-left: 600px;
+}
+.two-search-words {
+  position: absolute;
+  right: 50px;
+  top: 5px;
+  display: none;
+}
+.two-search-copy {
+  bottom: 300px;
+  display: none;
+}
+.two-words {
+  bottom: 550px;
+  display: none;
+}
+.cover {
+  background-color: white;
+  width: 105px;
+  height: 105px;
+  bottom: 328px;
+  margin-left: -55px;
+  display: none; 
+  z-index:5
+}
+.two-only-sofa {
+  width: 105px;
+  height: 105px;
+  bottom: 328px;
+  margin-left: -55px; 
+  display: none;
+  z-index: 333;
+}
+
+/* 第二屏结束 */
+/* 第三屏开始 */
+.three-main {
+  background: url("../images/03-main.png") no-repeat;
+  width: 990px;
+  height: 600px;
+  bottom: 0;
+}
+.three-sel-img {
+  bottom: 160px;
+  margin-left: 200px;
+}
+.three-sel-img-a {
+  bottom: 160px;
+  margin-left: 200px;
+  display: none;
+}
+.three-btn {
+  bottom: 70px;
+  margin-left: 150px;
+}
+.three-btn-a{
+  bottom: 70px;
+  margin-left: 150px;
+  display: none; 
+}
+.three-sofa-rotate {
+  bottom: 220px;
+  margin-left: -120px;
+  z-index: 666;
+  display: none;
+}
+/* 第三屏结束 */
+/* 第四屏开始 */
+.four-car-wrapper {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0
+}
+.four-car {
+  bottom: 50px;
+  margin-left: -250px;
+  z-index: 999
+}
+.four-sofa-rotate {
+  bottom: 240px;
+  margin-left: -185px;
+  display: none;
+}
+.cloud {
+  bottom: 500px;
+  animation: cloud 5s infinite;
+}
+@keyframes cloud{
+  50%{
+    margin-left: -300px; 
+  }
+}
+.four-words {
+  bottom: 470px;
+}
+.four-words-a {
+  bottom: 470px;
+  display: none;
+}
+.four-address {
+  bottom: 170px;
+  display: none;
+}
+.four-text {
+  position: absolute;
+  left: 35px;
+  top: 55px;
+}
+
+/* 第四屏结束 */
+/* 第五屏开始 */
+.five-mouse {
+  bottom: 220px;
+  margin-left: 300px;
+}
+.five-mouse-a {
+  bottom: 220px;
+  margin-left: 300px;
+  display: none;
+}
+.five-hand {
+  bottom: -375px;
+  margin-left: 250px;
+}
+.five-words {
+  bottom: 530px;
+  margin-left: -100px;
+  display: none;
+}
+.five-card {
+  bottom: 200px;
+  margin-left: -200px;
+  z-index: 666;
+}
+.five-order {
+  bottom: 290px;
+  margin-left: -250px;
+}
+.five-sofa-rotate {
+  margin-left: -200px;
+  bottom:100%;
+  opacity: 0;
+  z-index: 333;
+}
+/* 第五屏结束 */
+/* 第六屏开始 */
+.six-box {
+  bottom: 450px;
+  margin-left: -600px;
+  z-index: 666;
+}
+.six-car {
+  z-index: 999;
+  bottom: 0;
+  margin-left: -200px;
+}
+.six-address {
+  bottom: 110px;
+  margin-left: -60px;
+  display: none;
+}
+.six-door {
+  position: absolute;
+  right: 284px;
+  bottom: 116px;
+  display: none;
+
+}
+.six-women {
+  position: absolute;
+  right: 400px;
+  bottom: 116px;
+  display: none;
+}
+.six-man {
+  position: absolute;
+  right: 50%;
+  transform: translateX(50%);
+  margin-right: 210px;
+  bottom: 0;
+  display: none;
+
+  /* right: 420px;
+  bottom: 112px; */
+}
+.six-getProduct {
+  position: absolute;
+  right: 470px;
+  bottom: 390px;
+  display: none;
+}
+.six-words {
+  position: absolute;
+  right: 735px;
+  bottom: 430px;
+  display: none;
+}
+/* 第六屏结束  */
+/* 第七屏开始 */
+.seven-wrapper {
+  bottom: 440px;
+  width:100px;
+  margin-left: -242px;
+  height: 18px;
+  overflow: hidden;
+}
+.seven-star {
+  position: absolute;
+  left: 100px;
+  width: 100px;
+  height: 18px;
+}
+.seven-good {
+  bottom: 380px;
+  margin-left: -250px;
+  display: none;
+}
+/* 第七屏结束  */
+/* 第八屏开始 */
+.eight-btn {
+  bottom: 350px;
+  cursor: pointer;
+}
+.eight-again {
+  bottom: 400px;
+  margin-left: 400px;
+  cursor: pointer;
+}
+.eight-hand {
+  position: absolute;
+  z-index: 333;
+}
+
+/* 第八屏结束  */

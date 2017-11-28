@@ -1,0 +1,276 @@
+
+/*正片开始*/
+.zlk-container {
+  width: 1260px;
+  margin: 180px auto 0;
+  /*background-color: #abcdef;*/
+}
+
+.zlk-sub-title {
+  font-family: 'Gotham-Medium';
+  font-size: 36px;
+  color: #000;
+  margin-bottom: 40px;
+  padding-left: 60px;
+}
+/*猫咪图片*/
+.zlk-banner {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 559px;
+  margin-bottom: 50px;
+}
+
+img {
+  vertical-align: middle;
+  display: block;
+}
+
+.zlk-banner img {
+  width: 100%;
+  height: 100%;
+}
+
+.zlk-overlay {
+  position: absolute;
+  background-color: rgba(0,0,0,.5);
+  width: 0;
+  height: 559px;
+}
+
+
+.imgzero {
+  width: 0;
+  height: 100%;
+  overflow: hidden;
+  opacity: 0;
+}
+
+/*join-us*/
+
+.join-us {
+  width: 320px;
+  height: 80px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -50px;
+  margin-left: -160px;
+  border: 1px solid #fff;
+  text-align: center;
+  z-index: 1;
+  cursor: pointer;
+}
+
+.zlk-join {
+  color: #fff;
+  font: 18px/80px 'Gotham-Medium';
+  transition: 1000ms
+}
+
+.join-bgl,
+.join-bgr {
+  position: absolute;
+  top: 0;
+  width: 0;
+  height: 100%;
+  background-color: #fff;
+  z-index: -1;
+  transition: 1000ms;
+}
+
+.joinb-bgl,
+.joinb-bgr {
+  position: absolute;
+  top: 0;
+  width: 0;
+  height: 100%;
+  background-color: #000;
+  z-index: -1;
+  transition: 1000ms;
+}
+
+.join-bgl,
+.joinb-bgl {
+  left: 50%;
+}
+
+.join-bgr,
+.joinb-bgr {
+  right: 50%;
+}
+
+.joinb-us {
+  width: 320px;
+  height: 80px;
+  position: relative;
+  margin: 0 auto 45px;
+  border: 1px solid #e6e6e6;
+  text-align: center;
+  z-index: 1;
+  cursor: pointer;
+}
+
+.zlk-joinb {
+  color: #000;
+  font: 18px/80px 'Gotham-Medium';
+  transition: 1000ms
+}
+
+/*蛋疼的平面排版*/
+
+.zlk-content1,
+.zlk-content2,
+.zlk-content3,
+.zlk-content4,
+.zlk-content5 {
+  display: table;
+  width: 1260px;
+  margin-bottom: 100px;
+  position: relative;
+  overflow: hidden;
+}
+
+.zlk-content1 {
+  margin-top: 20px;
+  margin-left: 70px;
+
+}
+
+.zlk-content1 > div {
+  float: left;
+}
+
+.c1-left {
+  width: 0;
+  height: 100%;
+  opacity: 0;
+  overflow: hidden;
+}
+
+.zlk-content1 > .c1-right {
+  margin-left: 20px;
+}
+
+.content-title {
+  display: inline-block;
+  padding-bottom: 27px;
+  border-bottom: 1px solid #000;
+  font-size: 28px;
+  margin-bottom: 20px;
+  padding-top: 50px;
+}
+
+.content-sub-title {
+  margin-bottom: 25px;
+  font: 14px/28px 'Gotham-Medium';
+}
+
+.content-text {
+  font: 18px/36px 'Gotham-Medium';
+  padding-bottom: 25px;
+}
+
+.en {
+  font-size: 17px/34px 'Gotham-Medium';
+}
+
+.zlk-content2 {
+  text-align: center;
+}
+
+.c3-left,
+.c3-right,
+.c4-left,
+.c4-right {
+  float: left;
+}
+
+.c3-right {
+  margin-left: 30px;
+}
+
+.c3-right > .content-title,
+.c4-left > .content-title {
+  padding-top: 150px;
+}
+.c4-right {
+  margin-left: 24px;
+}
+
+.c5-title {
+  font-size: 50px;
+  line-height: 80px;
+}
+
+.c5-left,
+.c5-right {
+  float: left;
+  display: table;
+}
+
+.zlk-content5 .content-title {
+  padding-top: 0;
+}
+
+.c5-right {
+  margin-left: 30px;
+  float: right;
+}
+
+.c5rb-left {
+  margin-right: 300px;
+}
+
+.c5rb-right {
+  float: right;
+  margin-left: 30px;
+}
+
+.c5rb-right img {
+  position: absolute;
+  right: 0;
+  bottom: 25px;
+}
+
+/*初始化*/
+
+.zlk-main {
+  position: relative;
+}
+
+.word > * {
+  position: relative;
+}
+
+/*图片*/
+.c2-img,
+.c3-img,
+.c4-img {
+  width: 0;
+  overflow: hidden;
+  opacity: 0;
+}
+
+.c5-img {
+  overflow: hidden;
+  opacity: 0;
+}
+
+
+/*文字*/
+.word2 > *,
+.word3 > *,
+.word4 > *,
+.word5 > * {
+  position: relative;
+  top: 300px;
+  opacity: 0;
+}
+
+.zlk-main,
+.zlk-banner,
+.zlk-sub-title {
+  opacity: 0;
+}
